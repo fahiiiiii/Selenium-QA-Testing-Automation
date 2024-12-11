@@ -1,56 +1,5 @@
-# # tests/scraped_data.py
-# import sys
-# import os
+# tests/scraped_data.py
 
-# sys.path.append(os.path.join(os.path.dirname(__file__), "..", "helpers"))
-# from helpers import init_driver, write_to_excel, log_result
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# import time
-
-# # Define constants
-# URL = "https://www.alojamiento.io/"
-
-# # Initialize WebDriver
-# driver = init_driver()
-
-# try:
-#     # Open the target website
-#     driver.get(URL)
-
-#     # Wait for the page to load
-#     wait = WebDriverWait(driver, 10)
-
-#     # Extract data from script or HTML
-#     data = {}
-#     try:
-#         # Locate the script tag or specific elements containing data
-#         data["SiteName"] = "alo"  # Replace with actual scraping logic
-#         data["SiteUrl"] = URL
-#         data["Browser"] = (
-#             "Chrome"  # Replace with actual browser detection logic if needed
-#         )
-#         data["CountryCode"] = "BD"  # Replace with scraped value
-#         data["IP"] = "182.160.106.203"  # Replace with scraped value
-#         data["CampaignId"] = "ALOJAMIENTO"
-#     except Exception as e:
-#         print(f"Error extracting data: {e}")
-
-#     # Log result
-#     report_data = [log_result(URL, "Data Extraction Test", True, data)]
-
-#     # Save to Excel
-#     output_file = "scraped_data.xlsx"
-#     write_to_excel(report_data, output_file)
-#     print(f"Data saved to {output_file}")
-
-# except Exception as e:
-#     print(f"Error: {e}")
-
-# finally:
-#     # Close the WebDriver
-#     driver.quit()
 import json
 import time
 import pandas as pd
