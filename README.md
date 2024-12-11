@@ -9,6 +9,7 @@ This repository contains a Selenium-based QA testing automation framework for te
 Project Root
 ├── helpers/                    # Helper modules for shared functionality
 │   ├── __pycache__/            # Cached Python files
+│   ├── helpers.py              # Helper functionalities for reuse the codebase 
 │
 ├── reports/                    # Directory containing individual test reports
 │   ├── currency_filter_test_report.xlsx
@@ -28,17 +29,17 @@ Project Root
 │   ├── scraped_data.py
 │   ├── url_status_test.py
 │
-├── .gitignore                  # Git ignore file
+├── .gitignore                    # Git ignore file
 ├── centralized_test_reports.xlsx # Consolidated report of all test cases
-├── combine_excel_files.py      # Script to combine individual test reports
-├── README.md                   # Project documentation
-├── requirements.txt            # Python dependencies for the project
+├── combine_excel_files.py        # Script to combine individual test reports
+├── README.md                     # Project documentation
+├── requirements.txt              # Python dependencies for the project
 ```
 
 ## Features
 
 ### Automated Testing:
-* Verifies website functionality such as currency filters, tag structures, image alt text, HTML tag sequences, and more.
+* Verifies website functionality such as currency filters, tag structures, image alt text, HTML tag sequences,presence of H1 tag and more.
 
 ### Test Reports:
 * Each test generates an individual Excel report located in the `reports` directory.
