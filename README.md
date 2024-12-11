@@ -31,7 +31,6 @@ Project Root
 ├── .gitignore                  # Git ignore file
 ├── centralized_test_reports.xlsx # Consolidated report of all test cases
 ├── combine_excel_files.py      # Script to combine individual test reports
-├── currency_filter_test_report.xlsx # Duplicate report (can be removed)
 ├── README.md                   # Project documentation
 ├── requirements.txt            # Python dependencies for the project
 ```
